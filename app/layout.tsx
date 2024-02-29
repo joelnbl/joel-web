@@ -43,7 +43,7 @@ export default function RootLayout({
       </h1>
       <div className="prose prose-neutral dark:prose-invert">
         <p>
-        Highly motivated and experienced Full-Stack Developer with
+        Highly motivated and experienced Software Developer with
         a passion for building innovative and user-friendly web
         applications. Proven ability to design, develop, and deploy
         applications across various technologies. Adept at

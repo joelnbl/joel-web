@@ -1,9 +1,8 @@
 import Image from "next/image";
-import Link from "next/link";
-import joelnbl from 'public/images/home/joelnbl.jpg';
-import platzi from 'public/images/home/platzi.jpg';
-import coffee from 'public/images/home/coffee.jpg';
-import learning_platzi from 'public/images/home/learning_platzi.jpg';
+import platzi from 'public/images/about/platzi.jpg';
+import coffee from 'public/images/about/coffee.jpg';
+import learning_platzi from 'public/images/about/learning_platzi.jpg';
+import ubuntu from 'public/images/about/ubuntu.jpg';
 
 function Badge(props) {
   return (
@@ -19,19 +18,10 @@ export default function Page() {
   return (
     <section>
        <div className="columns-1 sm:columns-2 gap-4 my-8">
-        <div className="relative h-80 mb-4">
-          <Image
-            alt="Me speaking on stage at React Summit about the future of Next.js"
-            src={joelnbl}
-            fill
-            sizes="(max-width: 768px) 213px, 33vw"
-            priority
-            className="rounded-lg object-cover"
-          />
-        </div>
+        
         <div className="relative h-80 mb-4 sm:mb-0">
           <Image
-            alt="Me, Lydia, and Delba filming the Next.js Conf keynote"
+            alt="My experience at platzi conf, where i started to learn about programming"
             src={platzi}
             fill
             sizes="(max-width: 768px) 213px, 33vw"
@@ -41,7 +31,7 @@ export default function Page() {
         </div> 
         <div className="relative h-40 sm:h-80 sm:mb-4">
           <Image
-            alt="Me standing on stage at Reactathon delivering the keynote"
+            alt="Coffee, my favorite potion to code"
             src={coffee}
             fill
             sizes="(max-width: 768px) 213px, 33vw"
@@ -51,8 +41,18 @@ export default function Page() {
         </div>
         <div className="relative h-40 mb-4 sm:mb-0">
           <Image
-            alt="Me standing on stage at SmashingConf giving a talk about my optimism for the web"
+            alt="Me learning Linux and Git sometime ago"
             src={learning_platzi}
+            fill
+            sizes="(max-width: 768px) 213px, 33vw"
+            priority
+            className="rounded-lg object-cover"
+          />
+        </div>
+        <div className="relative h-40 mb-4 sm:mb-0">
+          <Image
+            alt="My favorite OS, Ubuntu"
+            src={ubuntu}
             fill
             sizes="(max-width: 768px) 213px, 33vw"
             priority

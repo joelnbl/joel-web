@@ -14,7 +14,7 @@ export default function Page() {
   return (
     <section>
       <p className="prose prose-neutral dark:prose-invert">
-        {`I'm a fullstack developer based on frontend, that loves to learn. I currently `}
+        {`I'm a software developer based on frontend, that loves to learn. I currently `}
         <Link href="/work">work</Link>
         {` as FS Developer at `}
         <span className="not-prose">
