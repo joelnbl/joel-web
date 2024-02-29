@@ -18,7 +18,6 @@ function Badge(props) {
 export default function Page() {
   return (
     <section>
-
        <div className="columns-1 sm:columns-2 gap-4 my-8">
         <div className="relative h-80 mb-4">
           <Image
