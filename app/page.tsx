@@ -13,25 +13,25 @@ function Badge(props) {
 export default function Page() {
   return (
     <section>
-       <p className="prose prose-neutral dark:prose-invert">
-        {`I'm a frontend developer, optimist, and community builder. I currently `}
+      <p className="prose prose-neutral dark:prose-invert">
+        {`I'm a fullstack developer based on frontend, that loves to learn. I currently `}
         <Link href="/work">work</Link>
-        {` as the VP of Product at `}
+        {` as FS Developer at `}
         <span className="not-prose">
-          <Badge href="https://vercel.com/home">
+          <Badge href="https://www.tecabot.ai/">
             <svg
-              width="13"
-              height="11"
+              width="15"
+              height="13"
               role="img"
-              aria-label="Vercel logo"
+              aria-label="Tecabot logo"
               className="inline-flex mr-1"
             >
-              <use href="/sprite.svg#vercel" />
+              <use href="/sprite.svg#tecabot" />
             </svg>
-            Vercel
+            Tecabot
           </Badge>
         </span>
-        {`, where I help teach the `}
+        {`, where I help working with `}
         <Badge href="https://nextjs.org">
           <img
             alt="Next.js logomark"
@@ -42,18 +42,18 @@ export default function Page() {
           />
           Next.js
         </Badge>
-        {` community, an open-source web framework built with `}
-        <Badge href="https://react.dev">
+        {` and helps as a backend to implement features and debugging working with `}
+        <Badge href="https://rubyonrails.org/">
           <svg
-            width="14"
-            height="14"
+            width="15"
+            height="13"
             role="img"
-            aria-label="React logo"
-            className="!mr-1"
+            aria-label="Ruby on rails logo"
+            className="inline-flex mr-1"
           >
-            <use href="/sprite.svg#react" />
+            <use href="/sprite.svg#ror" />
           </svg>
-          React
+          Ruby on Rails
         </Badge>
         .
       </p>
