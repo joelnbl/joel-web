@@ -36,7 +36,7 @@ export default function RootLayout({
        </div> 
       <div>
       <h1 className="font-medium text-2xl mb-4 text-left tracking-tighter">
-        hey, I'm Joel 👋
+        hey, I am Joel 👋
       </h1>
       <div className="prose prose-neutral dark:prose-invert">
         <p>
