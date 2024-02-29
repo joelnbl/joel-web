@@ -4,6 +4,7 @@ import "./globals.css";
 import { Navbar } from "./components/nav";
 import joelnbl from 'public/images/home/joelnbl.jpg';
 import Image from "next/image";
+import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,9 +22,8 @@ export default function RootLayout({
       <body className="antialiased max-w-2xl mb-40 flex flex-col md:flex-row mx-4 mt-8 lg:mx-auto">
         <main className="flex-auto min-w-0 mt-6 flex flex-col px-2 md:px-0">
           <Navbar />
-          <div className="flex justify-around gap-4">
-
-        <div className="flex justify-center">
+          <div className="rounded-md p-4 bg-blue-50 dark:bg-blue-950 flex flex-col sm:flex-row justify-around gap-4">
+        <div >
           <Image
             alt="Me speaking on stage at React Summit about the future of Next.js"
             src={joelnbl}
@@ -50,6 +50,50 @@ export default function RootLayout({
       </div>
       </div>
 
+          </div>
+          <div>
+      <div className="my-8 flex flex-row space-x-2 w-full h-14 overflow-x-auto">
+      <div className="border border-neutral-200 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-800 rounded flex items-center justify-between px-3 py-4">
+          <a href="https://x.com/joelnbl">
+            <svg className="dark:fill-white" width="35" height="27" role="img" aria-label="Twitter logo">
+              <use href="/sprite.svg#twitter" />
+            </svg>
+          </a>
+        </div>
+
+        <div className="border border-neutral-200 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-800 rounded flex items-center justify-between px-3 py-4">
+          <a href="https://github.com/joelnbl">
+            <svg className="dark:fill-white" width="35" height="27" role="img" aria-label="Supabase logo">
+              <use href="/sprite.svg#github" />
+            </svg>
+          </a>
+        </div>
+
+        <div className="border border-neutral-200 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-800 rounded flex items-center justify-between px-3 py-4">
+          <a href="https://linkedin.com/linkedin">
+            <svg className="dark:fill-white" width="35" height="27" role="img" aria-label="Supabase logo">
+              <use href="/sprite.svg#linkedin" />
+            </svg>
+          </a>
+        </div>
+
+        <div className="border border-neutral-200 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-800 rounded flex items-center justify-between px-3 py-4">
+          <a href="https://linkedin.com/linkedin">
+            <svg className="dark:fill-white" width="35" height="27" role="img" aria-label="Supabase logo">
+              <use href="/sprite.svg#reddit" />
+            </svg>
+          </a>
+        </div>
+
+        <div className="border border-neutral-200 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-800 rounded flex items-center justify-between px-3 py-4">
+          <a href="https://linkedin.com/linkedin">
+            <svg className="dark:fill-white" width="35" height="27" role="img" aria-label="Supabase logo">
+              <use href="/sprite.svg#instagram" />
+            </svg>
+          </a>
+        </div>
+       
+      </div>
           </div>
         {children}
         </main>
