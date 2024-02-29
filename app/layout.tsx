@@ -70,7 +70,7 @@ export default function RootLayout({
         </div>
 
         <div className="border border-neutral-200 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-800 rounded flex items-center justify-between px-3 py-4">
-          <a href="https://linkedin.com/linkedin">
+          <a href="https://www.linkedin.com/in/joelnbl/">
             <svg className="dark:fill-white" width="35" height="27" role="img" aria-label="Supabase logo">
               <use href="/sprite.svg#linkedin" />
             </svg>
@@ -78,7 +78,7 @@ export default function RootLayout({
         </div>
 
         <div className="border border-neutral-200 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-800 rounded flex items-center justify-between px-3 py-4">
-          <a href="https://linkedin.com/linkedin">
+          <a href="https://www.reddit.com/user/Sea-Association4626/">
             <svg className="dark:fill-white" width="35" height="27" role="img" aria-label="Supabase logo">
               <use href="/sprite.svg#reddit" />
             </svg>
@@ -86,7 +86,7 @@ export default function RootLayout({
         </div>
 
         <div className="border border-neutral-200 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-800 rounded flex items-center justify-between px-3 py-4">
-          <a href="https://linkedin.com/linkedin">
+          <a href="https://instagram.com/joelnbl/">
             <svg className="dark:fill-white" width="35" height="27" role="img" aria-label="Supabase logo">
               <use href="/sprite.svg#instagram" />
             </svg>
