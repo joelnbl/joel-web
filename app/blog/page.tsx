@@ -21,7 +21,7 @@ const BlogPostCard = ({ post }) => {
 };
 
 export default function Page() {
-  const [posts, setPosts] = useState([]);
+  const [posts, setPosts] = useState<any>([]);
 
   useEffect(() => {
     fetch('https://dev.to/api/articles?username=joelnbl')
