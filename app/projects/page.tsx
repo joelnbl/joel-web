@@ -1,9 +1,13 @@
+import Image from "next/image";
+import portfolio from 'public/images/projects/portfolio.jpg';
+import virent from 'public/images/projects/virent.jpg';
+
 const ProjectCard = ({ project }) => {
   return (
     <div className="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl m-3">
       <div className="md:flex">
         <div className="md:flex-shrink-0">
-          <img className="h-48 w-full object-cover md:w-48" src={project.image} alt={project.name} />
+          <Image className="h-48 w-full object-cover md:w-48" width={500} height={500} src={project.image} alt={project.name} />
         </div>
         <div className="p-8">
           <div className="uppercase tracking-wide text-sm text-indigo-500 font-semibold">{project.name}</div>
@@ -22,16 +26,16 @@ const projects = [
   {
     name: 'Portfolio',
     description: 'My personal portfolio built with Next.js and TailwindCSS',
-    image: 'https://placehold.co/600x400',
-    githubLink: 'url-to-github-repo',
-    websiteLink: 'url-to-live-website'
+    image: portfolio,
+    githubLink: 'https://github.com/joelnbl/joel-web',
+    websiteLink: '/'
   },
   {
     name: 'Virent',
     description: 'A platform to help people to find a rent place',
-    image: 'https://placehold.co/600x400',
-    githubLink: 'url-to-github-repo',
-    websiteLink: 'url-to-live-website'
+    image: virent,
+    githubLink: 'https://github.com/joelnbl/virent',
+    websiteLink: 'https://virent.vercel.app/dashboard'
   }
 ]
 
