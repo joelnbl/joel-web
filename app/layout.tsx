@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import { GoogleAnalytics } from '@next/third-parties/google'
+import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import "./globals.css";
 import { Navbar } from "./components/nav";
 import joelnbl from 'public/images/home/joelnbl.jpg';
@@ -102,7 +105,10 @@ export default function RootLayout({
         </div>
         </main>
         <Footer />
+        <Analytics />
+        <SpeedInsights />
       </body>
+      <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GAK || ''} />
     </html>
   );
 }
