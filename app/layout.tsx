@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import { GoogleAnalytics } from '@next/third-parties/google'
 import "./globals.css";
 import { Navbar } from "./components/nav";
 import joelnbl from 'public/images/home/joelnbl.jpg';
@@ -103,6 +104,7 @@ export default function RootLayout({
         </main>
         <Footer />
       </body>
+      <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GAK || ''} />
     </html>
   );
 }
